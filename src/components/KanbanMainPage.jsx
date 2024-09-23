@@ -182,7 +182,7 @@ const KanbanMainPage = () => {
           <div key={group.key} className="kanban-column">
             {filterType === "user" && (
               <div>
-                <div style={{ display: "flex", padding: "0 20px", justifyContent: "space-between" }}>
+                <div style={{ display: "flex", padding: "15px 0px",margin:"0 10px", justifyContent: "space-between" }}>
                   <div style={{ display: "flex" }}>
                     <Avatar
                       name={getUserName(group.key)}
@@ -202,7 +202,7 @@ const KanbanMainPage = () => {
             )}
             {filterType === "status" && (
               <div>
-                <div style={{ display: "flex", padding: "0 20px", justifyContent: "space-between" }}>
+                <div style={{ display: "flex", padding: "15px 0px",margin:"0 10px", justifyContent: "space-between" }}>
                   <div>
                     <img src={getStatusImage(group.key)} className="user-avatar" alt="status" />
                     <span>{group.key}</span>
@@ -217,7 +217,7 @@ const KanbanMainPage = () => {
             )}
             {filterType === "priority" && (
               <div>
-                <div style={{ display: "flex", padding: "0 20px", justifyContent: "space-between" }}>
+                <div style={{ display: "flex", padding: "15px 0px",margin:"0 10px", justifyContent: "space-between" }}>
                   <div>
                     <img src={getStatusImage(getPriority(group.key))} className="user-avatar" alt="status" />
 

@@ -55,7 +55,7 @@ const NavBar = ({ setFilterType, setSortType, filterType, sortType}) => {
   }, [dropdownRef]);
 
   return (
-    <header>
+    
       <nav className="navbar">
         <button className="nav-button" onClick={toggleDropdown}>
           <img src={`${process.env.PUBLIC_URL}/assets/icons_FEtask/Display.svg`} alt="Display Icon" className="filter-icon" />
@@ -104,7 +104,7 @@ const NavBar = ({ setFilterType, setSortType, filterType, sortType}) => {
           </div>
         )}
       </nav>
-    </header>
+    
   );
 };
 

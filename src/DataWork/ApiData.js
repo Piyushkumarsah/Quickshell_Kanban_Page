@@ -21,7 +21,6 @@ const APiData = async () => {
           status: status
         });
       });
-  
       return { tickets, users };
     } catch (error) {
       console.error("Error fetching API data:", error);
